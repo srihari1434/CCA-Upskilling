@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+
+namespace program
+{
+    public class empdetails
+    {
+      public int id{get; set;}
+      public string name{get; set;}
+      public string company{get; set;}
+    }
+    class arraylist
+    {
+        public static void Main()
+        {
+            List<empdetails> empList = new List<empdetails>();
+            empdetails emp1=new empdetails(){id=1,name="hari",company="CG"};
+            empdetails emp2=new empdetails(){id=2,name="raju",company="XYZ"};
+            empdetails emp3=new empdetails(){id=3,name="ramu",company="abc"};
+            empList.Add(emp1);
+            empList.Add(emp2);
+            empList.Add(emp3);
+            foreach(empdetails i in empList)
+            {
+                Console.WriteLine(i.id+" "+i.name+" "+i.company);
+            }
+    }
+}
+}

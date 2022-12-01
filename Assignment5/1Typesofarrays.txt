@@ -1,0 +1,48 @@
+using System;
+
+namespace Assignment
+{
+     class Program
+    {
+        public static void Main(string[] args)
+        {
+             int[] intarr =new int[5];
+             int[] target = new int[5];
+            //string[] strarr = new string[5];
+           
+          for(int i=0;i<intarr.Length;i++)
+          {
+        Console.WriteLine("Enter the Integer number {0} ",i);
+         intarr[i] = Convert.ToInt32(Console.ReadLine());
+          }
+          /*for(int i=0;i<strarr.Length;i++)
+          {
+            Console.WriteLine("Enter the String {0}: ",i);
+             strarr[i] = Console.ReadLine();
+          }*/
+
+            Array.Copy(intarr, target, intarr.Length);
+            Console.WriteLine("After coping Integer numbers: ");
+            for (int i = 0; i < target.Length; i++)
+            {
+                Console.WriteLine(" " + target[i]);
+            }
+
+            Array.Sort(intarr);
+            Console.WriteLine("After sorting of array: ");
+            foreach (int i in intarr)
+            {
+                Console.WriteLine(" " + i);
+            }
+             Array.Reverse(intarr);
+            Console.WriteLine("After reversing of array: ");
+            foreach (int i in intarr)
+            {
+                Console.WriteLine(" " + i);
+            }
+              Array.Clear(intarr, 0, intarr.Length);
+            Console.WriteLine("Array Data cleared: ");
+            Console.ReadLine();
+}
+}
+}
