@@ -1,0 +1,43 @@
+using System;
+namespace hari
+{
+class calculator
+{
+    public void add(double a,double b)
+    {
+      double c=a+b;
+      Console.WriteLine("addition of two numbers is: "+c);
+    }
+    public void sub(double a,double b)
+    {
+      double c=a-b;
+      Console.WriteLine("substraction of two numbers is: "+c);   
+    }
+    public void mul(double a,double b)
+    {
+        double c=a*b;
+      Console.WriteLine("multiplication of two numbers is:"+c); 
+    }
+    public void div(double a,double b)
+    {
+       double c=a/b;
+      Console.WriteLine("div of two numbers is: "+c);  
+    }
+}
+class main
+{
+     static void Main()
+    {
+        double a,b;
+        
+        Console.WriteLine("enter the a,b values");
+        a=Convert.ToDouble(Console.ReadLine());
+        b=Convert.ToDouble(Console.ReadLine());
+        calculator obj =new calculator();
+        obj.add(a,b);
+        obj.sub(a,b);
+        obj.mul(a,b);
+        obj.div(a,b);
+    }
+}
+}

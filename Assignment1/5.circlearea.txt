@@ -1,0 +1,24 @@
+using System;
+namespace hari
+{
+    class circle
+    {
+        public void area(int r)
+        {
+        Console.WriteLine("area of circle is :"+(2*3.14*r));
+        Console.WriteLine("circumference of circle is :"+(3.14*r*r));
+        }
+        
+    }
+    class main
+    {
+        public static void Main()
+        {
+        int r;
+        Console.WriteLine("Enter the r value");
+        r=Convert.ToInt32(Console.ReadLine());
+        circle obj=new circle();
+        obj.area(r);
+        }
+    }
+}

@@ -1,0 +1,37 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Book obj=new Book();
+        obj.values();
+        obj.display();
+    }
+}
+   public struct Book
+    {
+       public int bookId;
+       public string title;
+       public double  price;
+      public enum Booktype {Magazine, Novel, ReferenceBook, Miscellaneous};
+    
+      public void values()
+      {
+        bookId=12134;
+        title="chetan bhagat";
+        price=125;
+       }
+      
+     public void display()
+    {
+        Console.WriteLine("BookId is :"+bookId);
+        Console.WriteLine("Book title is :"+title);
+        Console.WriteLine("Book price  is :"+price+"Rs");
+        Console.WriteLine("Booktype  is :"+Booktype.Novel);
+         
+    }
+      
+    }  
+   
+
